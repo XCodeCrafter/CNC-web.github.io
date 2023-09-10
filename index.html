@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--=============== FONT google KIT ===============-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
+
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+      <!--=============== REMIXICONS ===============-->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+      <!-- font awesome cdn link -->
+      <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+      
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+      <link rel="stylesheet" href="assets/css/111.css">
+
+
+
+
+
+
+      
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Milltronics-CZ</title>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+
+<!-- 
+    - preload images
+  -->
+  <link rel="preload" as="video/mp4" href="./assets/img/Milltronics VM8434XP CNC Machining Center (2020).mp4">
+  <link rel="preload" as="image" href="./assets/img/cnc11.jpg">
+  <link rel="preload" as="image" href="./assets/img/cnc12.jpg">
+
+
+  <title>Responsive CNC website - Libor Zmelik</title>
+   </head>
+   <body>
+
+      <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preload" data-preaload>
+   <div class="circle"></div>
+   <p class="text"> Milltronics-CZ</p>
+ </div>
+
+
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+
+            <a href="index.html" class="nav__logo">
+               Milltronics-CZ
+
+               <img src="assets/img/Milltronics-logo-cutout.png" alt="company logo" class="logo">
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li class="nav__item"> <a href="#frezky" class="nav__link1 active-link">Frezky<i class="fas fa-caret-down"></i></a>
+                  
+                     <div class="dropdown__menu" id="dropdown-menu">
+                        <ul>
+                           <li><a href="tool-room-mills.html">Tool Room Mills</a></li>
+                           <li><a href="VM-series.html">Serie-VM │ Vertikalni Obrabeci Centra</a></li>
+                           <li><a href="XP-series.html">Serie XP │ Vertikalni Obrabeci Centra</a></li>
+                           <li><a href="IL-series.html">Serie IL │ IN- line Vertikalni Obrabeci Centra</a></li>
+                           <li><a href="BR-series.html">Serie BR │ Mostove Frezky</a></li>
+                        </ul>
+                     </div>
+                  
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#soustruhy" class="nav__link1">Soustruhy<i class="fas fa-caret-down"></i></a>
+
+                     <div class="dropdown__menu">
+                        <ul>
+                           <li><a href="ML-series.html">ML Serie │ Kombinovane Soustruhy </a></li>
+                           <li><a href="SL-series.html">SL Serie │ "Slant-Bed" soustruznicke centrum</a></li>
+                        </ul>
+                     </div>
+                  </li>
+
+                  <li class="nav__item"> <a href="#frezky" class="nav__link1">CNC System<i class="fas fa-caret-down"></i></a>
+                  
+                     <div class="dropdown__menu" id="dropdown-menu">
+                        <ul>
+                           <li><a href="CNC-control.html">9000-DGI CNC</a></li>
+                           <li><a href="Productivity_soft.html">Software pro vyrobu</a></li>
+                           <li><a href="DGI Desktop.html">DGI Desktop </a></li>
+                        </ul>
+                     </div>
+                  </li>
+
+
+                  <li class="nav__item"> <a href="#frezky" class="nav__link1">Servis<i class="fas fa-caret-down"></i></a>
+                  
+                     <div class="dropdown__menu" id="dropdown-menu">
+                        <ul>
+                           <li><a href="#">Autorizovany servis</a></li>
+                           <li><a href="#">Technicky support</a></li>
+                        </ul>
+                     </div>
+                  </li>
+               
+               </ul>
+               <!--close button-->
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-line"></i>
+               </div>
+            </div>
+
+            <!--toggle button-->
+            <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-menu-line"></i>
+            </div>
+         </nav>
+
+
+         
+      </header>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section" id="home">
+            
+            <!-- The video -->
+            <video autoplay muted loop id="myVideo">
+               <source src="assets/img/Milltronics VM8434XP CNC Machining Center (2020).mp4" type="video/mp4">
+            </video>
+            <!-- Use a button to pause/play the video with JavaScript -->
+            <div class="content">
+                  <button id="myBtn" onclick="myFunction()">Pause</button>
+            </div>
+
+
+ <div class="home__cards grid">
+                  <article class="home__card">
+                     <img src="assets/img/cnc4.jpg" alt="home image" class="home__card-img">
+                  <h3 class="home__card-title">Milling</h3>
+                  <div class="home__card-shadow"></div>
+                  </article>
+
+                  <article class="home__card">
+                     <img src="assets/img/cnc2.jpg" alt="home image" class="home__card-img">
+                  <h3 class="home__card-title">Turning</h3>
+                  <div class="home__card-shadow"></div>
+                  </article>
+
+
+                  <article class="home__card">
+                     <img src="assets/img/cnc10.jpeg" alt="home image" class="home__card-img">
+                  <h3 class="home__card-title">Milltronic software</h3>
+                  <div class="home__card-shadow"></div>
+                  </article>
+
+                  <article class="home__card">
+                     <img src="assets/img/cnc12.jpg" alt="home image" class="home__card-img">
+                  <h3 class="home__card-title">High quality</h3>
+                  <div class="home__card-shadow"></div>
+                  </article>
+               </div>
+
+            
+            <div class="home__container container grid">
+               <div class="home__data">
+                  <h3 class="home__subtitle">
+                     Welcome To Milltronics-CZ
+                  </h3>
+
+                  <h1 class="home__title">
+                     Explore <br>
+                     The CNC World with us.
+                  </h1>
+
+                  <p class="home__description1">
+                     Milltronics offers 50 different models of CNC milling and CNC turning machines for toolroom and production environments. 
+                     The lineup includes toolroom mills and toolroom lathes, general-purpose and high-performance vertical machining centers, CNC lathes, 
+                     and bridge mills. Our versatile product line offers something for everyone.
+                  </p>
+                  <a href="#" class="button">
+                     Start Your Journey <i class="ri-arrow-right-line"></i>
+                  </a>
+
+               </div>
+            </div>
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               <section class="container_sub">
+                  <div id="slide">
+                      <div class="item" style="background-image: url(assets/img/cnc10.jpeg);">
+                          <div class="content">
+                              <div class="name">LUNDEV</div>
+                              <div class="des">Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu</div>
+                              <button>See more</button>
+                          </div>
+                      </div>
+                      <div class="item" style="background-image: url(assets/img/cnc11.jpg);">
+                          <div class="content">
+                              <div class="name">LUNDEV</div>
+                              <div class="des">Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu</div>
+                              <button>See more</button>
+                          </div>
+                      </div>
+                      <div class="item" style="background-image: url(assets/img/cnc12.jpg);">
+                          <div class="content">
+                              <div class="name">LUNDEV</div>
+                              <div class="des">Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu</div>
+                              <button>See more</button>
+                          </div>
+                      </div>
+                      <div class="item" style="background-image: url(assets/img/cnc15.jpg);">
+                          <div class="content">
+                              <div class="name">LUNDEV</div>
+                              <div class="des">Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu</div>
+                              <button>See more</button>
+                          </div>
+                      </div>
+                      <div class="item" style="background-image: url(assets/img/cnc2.jpg);">
+                          <div class="content">
+                              <div class="name">LUNDEV</div>
+                              <div class="des">Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu</div>
+                              <button>See more</button>
+                          </div>
+                      </div>
+                      <div class="item" style="background-image: url(assets/img/cnc4.jpg);">
+                          <div class="content">
+                              <div class="name">LUNDEV</div>
+                              <div class="des">Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu</div>
+                              <button>See more</button>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="buttons">
+                      <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+                      <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+                  </div>
+               </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         <!--==================== ABOUT ====================-->
+         <section class="about section" id="about">
+            <div class="about__container container grid">
+               <div class="about__data">
+                  <h2 class="section__title">
+                     9000-DGI CNC  <br>
+                     Intuitive yet Powerful
+                  </h2>
+                  <p class="about__description">
+                     Intuitive yet Powerful
+At Milltronics, we are constantly refining our controls to simplify operation, shorten setup times, 
+and provide features that reduce cycle times. The 9000-DGI Series control features 120 GB disk storage, 4GB memory, 
+up to 10-times better graphic performance, mid-travel tactile keys, and an enlarged 15″ LCD touch screen. It’s a Windows®-based 
+platform and offers all the user-friendly features that 
+Milltronics CNC controls are known for,
+ such as the G-code visualization screen.
+                  </p>
+
+                  <a href="#" class="button">
+                     Explore <i class="ri-arrow-right-line"></i>
+                  </a>
+               </div>
+
+               <div class="about__image">
+                  <img src="assets/img/cnc11.jpg" alt="about image" class="about__img">
+                  <div class="about__shadow"></div>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== POPULAR ====================-->
+         <section class="popular section" id="popular">
+            <h2 class="section__title">
+               Our Top <br>
+               Products
+            </h2>
+
+            <div class="popular__container container grid">
+               <article class="popular__card">
+                  <div class="popular__image">
+                     <img src="assets/img/cnc10.jpeg" alt="popular image" class="popular__img">
+                     <div class="popular__shadow"></div>
+                  </div>
+
+                  <h2 class="popular__title">
+                     DMG 400
+                  </h2>
+
+                  <div class="popular__location">
+                     <i class="ri-settings-5-line"></i>
+                     <span>5 axis milling</span>
+                  </div>
+               </article>
+
+               <article class="popular__card">
+                  <div class="popular__image">
+                     <img src="assets/img/cnc11.jpg" alt="popular image" class="popular__img">
+                     <div class="popular__shadow"></div>
+                  </div>
+
+                  <h2 class="popular__title">
+                  DMG 350
+                  </h2>
+
+                  <div class="popular__location">
+                     <i class="ri-settings-5-line"></i>
+                     <span>Hard material maching</span>
+                  </div>
+               </article>
+
+               <article class="popular__card">
+                  <div class="popular__image">
+                     <img src="assets/img/cnc12.jpg" alt="popular image" class="popular__img">
+                     <div class="popular__shadow"></div>
+                  </div>
+
+                  <h2 class="popular__title">
+                  DMG 550
+                  </h2>
+
+                  <div class="popular__location">
+                     <i class="ri-settings-5-line"></i>
+                     <span>Top quality</span>
+                  </div>
+               </article>
+            </div>
+         </section>
+         
+         <!--==================== EXPLORE ====================-->
+         <section class="explore section" id="explore">
+            <div class="explore__container">
+               <div class="explore__image">
+                  <img src="assets/img/cncvyroba.jpg" alt="explore__image" class="explore__img">
+               <div class="explore__shadow"></div>
+               </div>
+
+               <div class="explore__content container grid">
+                  <div class="explore__data">
+                     <h2 class="section__title">
+                        Explore The <br> 
+                        Best option
+                     </h2>
+
+                     <p class="explore__description">
+                        The VK4II is a full 3-Axis CNC knee mill with the unique Milltronics MillSlideTM that
+                         provides greater rigidity and more spindle nose to table top than conventional knee mills. 
+                         With 33″ x 14.25″ x 5.25″ (MillSlideTM), 
+                        16.5″ knee and 5.83″ quill travel, the VK4II can be run as manual, teach or full CNC.
+                     </p>
+                  </div>
+
+                  <div class="explore__user">
+                     <img src="assets/img/explore-perfil.png" alt="expolore image" class="explore__perfil">
+                  <span class="explore__name">Paul Jeans</span>
+                  </div>
+               </div>
+            </div>
+         </section>
+         
+         <!--==================== JOIN ====================-->
+         <section class="join section">
+            <div class="join__container container grid">
+               <div class="join__data">
+                  <h2 class="section__title">
+                     Your Journey <br>
+                     Starts Here
+                  </h2>
+
+                  <p class="join__description">
+                     Get up to date with the latest 
+                     cnc and information from us.                     
+                  </p>
+
+                  
+
+
+               <div class="container_form">
+                  <form onsubmit="sendEmail(); reset(); return false;" >
+                     <h3>GET IN TOUCH</h3>
+                     <input type="text" id="name" placeholder="Your Name" required>
+                     <input type="email" id="email" placeholder="Email id" required>
+                     <input type="text" id="phone" placeholder="Phone no." required>
+                     <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
+                     <button type="submit">Send</button>
+                  </form>
+               </div>
+
+
+
+
+
+
+
+               </div>
+
+               <div class="join__image">
+                 <img src="assets/img/cnc15.jpg" alt="join image" class="join__img"> 
+               <div class="join__shadow"></div>
+               </div>
+            </div>
+         </section>
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         <div class="footer__container container grid">
+            <div class="footer__content grid">
+               <div>
+                  <a href="#" class="footer__logo">Milltronics</a>
+
+                  <p class="footer__description">
+                     Work with us and explore <br> 
+                     the world without limits.
+                  </p>
+               </div>
+
+               <div class="footer__data grid">
+<!-- 1-->        <div>
+               <h3 class="footer__title">About</h3>
+
+               <ul class="footer__links">
+                  <li>
+                     <a href="#" class="footer__link">About Us</a>
+                  </li>
+                  
+                  <li>
+                     <a href="#" class="footer__link">Features</a>
+                  </li>
+
+                  <li>
+                     <a href="#" class="footer__link">News & BlogS</a>
+                  </li>                  
+               </ul>
+            </div>
+<!-- 2-->
+         <div>
+         <h3 class="footer__title">Company</h3>
+
+         <ul class="footer__links">
+            <li>
+               <a href="#" class="footer__link">FAQs</a>
+            </li>
+            
+            <li>
+               <a href="#" class="footer__link">History</a>
+            </li>
+
+            <li>
+               <a href="#" class="footer__link">Testimonials</a>
+            </li>                  
+         </ul>
+      </div>
+<!-- 3-->
+   <div>
+   <h3 class="footer__title">Contact</h3>
+
+   <ul class="footer__links">
+      <li>
+         <a href="#" class="footer__link">Call Center</a>
+      </li>
+      
+      <li>
+         <a href="#" class="footer__link">Support Center</a>
+      </li>
+
+      <li>
+         <a href="#" class="footer__link">Contact Us</a>
+      </li>                  
+   </ul>
+</div>
+
+<!-- 4-->
+<div>
+<h3 class="footer__title">Support</h3>
+
+<ul class="footer__links">
+   <li>
+      <a href="#" class="footer__link">Privacy Policy</a>
+   </li>
+   
+   <li>
+      <a href="#" class="footer__link">Terms & Services</a>
+   </li>
+
+   <li>
+      <a href="#" class="footer__link">Payments</a>
+   </li>                  
+</ul>
+   
+
+      </div>
+         </div>
+            </div>
+               <div class="footer__group">
+                  <div class="footer__social">
+                     <a href="https://www.facebook.com/"  target="_blank"  class="footer__social-link">
+                        <i class="ri-facebook-line"></i>
+                     </a>
+
+                     <a href="https://www.instagram.com/"  target="_blank"  class="footer__social-link">
+                        <i class="ri-instagram-line"></i>
+                     </a>
+
+                     <a href="https://www.youtube.com/"  target="_blank"  class="footer__social-link">
+                        <i class="ri-youtube-line"></i>
+                     </a>
+
+                     <a href="https://www.linkedin.com/"  target="_blank"  class="footer__social-link">
+                        <i class="ri-linkedin-line"></i>
+                     </a>
+                  </div>
+
+                  <span class="footer__copy">
+                     &#169; All rights reserved created by <span>Mr. Libor Zmelik web designer</span> | all right reserved!</div>
+                  </span>
+            </div>
+         </div>
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+      <a href="" class="scrollup" id="scroll-up">
+         <i class="ri-arrow-up-line"></i>
+      </a>
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src="assets/js/scrollreveal.min.js"></script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+
+      <script>
+         function sendEmail(){
+            Email.send({
+               Host : "smtp.gmail.com",
+               Username : "zmelik.l@gmail.com",
+               Password : "password",
+               To : 'zmelik.l@gmail.com',
+               From : document.getElementById("email").value,
+               Subject : "New Contact Form Enquiery",
+               Body : "Name: " + document.getElementById("name").value
+                  + "<br> Email: " + document.getElementById("email").value
+                  + "<br> Phone no.: " + document.getElementById("phone").value
+                  + "<br> Message: " + document.getElementById("message").value
+         }).then(
+         message => alert("Message Sent Succesfully")
+         );
+      }
+
+   </script>
+
+
+
+
+
+
+      <script>
+         // Get the video
+         var video = document.getElementById("myVideo");
+         
+         // Get the button
+         var btn = document.getElementById("myBtn");
+         
+         // Pause and play the video, and change the button text
+         function myFunction() {
+           if (video.paused) {
+             video.play();
+             btn.innerHTML = "Pause";
+           } else {
+             video.pause();
+             btn.innerHTML = "Play";
+           }
+         }
+         </script>
+   </body>
+</html>
