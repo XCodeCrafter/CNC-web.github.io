@@ -717,6 +717,19 @@ position: relative;
   padding-left: 3rem;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   column-gap: 8.5rem;
+
+
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  overflow-x: auto;
+
+
+
+
 }
 
 .about__control {
@@ -986,8 +999,135 @@ position: relative;
   justify-self: center;
   overflow: hidden;
   transition: transform 0.4s;
+}
+
+
+.about__img2 {
+  width: 500px;
+  height: 600px;
+  background: url(../img/TRM3016-2.png);
+  background-position: center;
+  background-size: cover;
+  padding: 4rem;
+  background-color: #337ab7;
+  position: relative;
+  justify-self: center;
+  overflow: hidden;
+  transition: transform 0.4s;
 
 }
+
+.about__img3 {
+  width: 500px;
+  height: 500px;
+  background: url(../img/TRM20-3.png);
+  background-position: center;
+  background-size: cover;
+  padding: 4rem;
+  background-color: #337ab7;
+  position: relative;
+  justify-self: center;
+  overflow: hidden;
+  transition: transform 0.4s;
+
+}
+
+
+.about__img4 {
+  width: 500px;
+  height: 600px;
+  background: url(../img/TRM30-4.png);
+  background-position: center;
+  background-size: cover;
+  padding: 4rem;
+  background-color: #337ab7;
+  position: relative;
+  justify-self: center;
+  overflow: hidden;
+  transition: transform 0.4s;
+
+}
+
+.about__img5 {
+  width: 500px;
+  height: 600px;
+  background: url(../img/TRM30HT-5.png);
+  background-position: center;
+  background-size: cover;
+  padding: 4rem;
+  background-color: #337ab7;
+  position: relative;
+  justify-self: center;
+  overflow: hidden;
+  transition: transform 0.4s;
+
+}
+
+
+.about__img6 {
+  width: 500px;
+  height: 600px;
+  background: url(../img/RH33-6.png);
+  background-position: center;
+  background-size: cover;
+  padding: 4rem;
+  background-color: #337ab7;
+  position: relative;
+  justify-self: center;
+  overflow: hidden;
+  transition: transform 0.4s;
+
+}
+
+.about__img7 {
+  width: 500px;
+  height: 600px;
+  background: url(../img/TRQ20-7.png);
+  background-position: center;
+  background-size: cover;
+  padding: 4rem;
+  background-color: #337ab7;
+  position: relative;
+  justify-self: center;
+  overflow: hidden;
+  transition: transform 0.4s;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .about__img {
@@ -1934,4 +2074,3 @@ position: relative;
   }
 
 }
-
