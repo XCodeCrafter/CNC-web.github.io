@@ -240,6 +240,9 @@ img {
   padding-inline-start: 16px;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  text-shadow: 1px 1px #f1f2f598;
+  
+
   -webkit-background-clip: text;
   -webkit-text-stroke: 0.5px hsla(180, 2%, 8%, 1);
   animation: loadingText linear 2s infinite;
@@ -703,7 +706,8 @@ position: relative;
 /*=============== ABOUT Hlavni content ===============*/
 .about__container {
   row-gap: 3rem;
-  padding-left: 3rem;
+  margin: 5px;
+  padding: 3rem;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
@@ -1330,6 +1334,10 @@ position: relative;
     flex-wrap: wrap;
   }
 
+  .preload .text {
+    font-size: calc(0.5rem + 3vw) !important;
+  }
+
   
   .pic_text2 {
     width: 300px;
@@ -1348,6 +1356,18 @@ position: relative;
   .footer__data {
     grid-template-columns: repeat(3, max-content);
   }
+
+  .green_main_h1 h1 {
+    font-size: 2rem !important; 
+}
+
+.green_h2 h2 {
+ font-size: 1.5rem !important;
+
+}
+
+
+
 }
 
 @media screen and (max-width: 768px) {
@@ -1361,6 +1381,9 @@ position: relative;
     flex-wrap: wrap;
   }
 
+  .preload .text {
+    font-size: calc(1rem + 3vw);
+  }
 
   .box1 {
     display: flex;
@@ -1424,6 +1447,9 @@ position: relative;
   width: 300px;
   
 }
+
+
+
 }
 
 
@@ -1908,3 +1934,4 @@ position: relative;
   }
 
 }
+
