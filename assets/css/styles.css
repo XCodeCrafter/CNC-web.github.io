@@ -1503,9 +1503,16 @@ position: relative;
 
 .green_h2 h2 {
  font-size: 1.5rem !important;
+}
+
+  .main_img {
+margin: 3px;
 
 }
 
+.heading2 {
+  margin: 3px;
+}
 
 
 }
