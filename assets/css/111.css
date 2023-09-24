@@ -36,93 +36,7 @@
 }
 
 
-#slide{
-  width:max-content;
-  margin-top:50px;
-}
-.item{
-  width: 200px;
-  height: 200px;
-  background-position: 50% 50%;
-  display: inline-block;
-  transition: 0.5s;
-  background-size: cover;
-  position: absolute;
-  z-index: 1;
-  top:100%;
-  transform: translate(0,-50%);
-  border-radius: 20px;
-  box-shadow:  0 30px 50px #505050;
-  margin-bottom: 6rem;
-  
-}
-.item:nth-child(1),
-.item:nth-child(2){
-  left:0;
-  top:0;
-  transform: translate(0,0);
-  border-radius: 0;
-  width:100%;
-  height:100%;
-  box-shadow: none;
-}
-.item:nth-child(3){
-  left:50%;
-}
-.item:nth-child(4){
-  left:calc(50% + 220px);
-}
-.item:nth-child(5){
-  left:calc(50% + 440px);
-}
-.item:nth-child(n+6){
-  left:calc(50% + 660px);
-  opacity: 0;
-}
-.item .content{
-  position: absolute;
-  top:50%;
-  left:100px;
-  width:300px;
-  text-align: left;
-  padding:0;
-  color:#eee;
-  transform: translate(0,-50%);
-  display: none;
-  font-family: system-ui;
-}
-.item:nth-child(2) .content{
-  display: block;
-  z-index: 11111;
-}
-.item .name{
-  font-size: 40px;
-  font-weight: bold;
-  opacity: 0;
-  animation:showcontent 1s ease-in-out 1 forwards
-}
-.item .des{
-  margin:20px 0;
-  opacity: 0;
-  animation:showcontent 1s ease-in-out 0.3s 1 forwards
-}
-.item button{
-  padding:10px 20px;
-  border:none;
-  opacity: 0;
-  animation:showcontent 1s ease-in-out 0.6s 1 forwards
-}
-@keyframes showcontent{
-  from{
-      opacity: 0;
-      transform: translate(0,100px);
-      filter:blur(33px);
-  }to{
-      opacity: 1;
-      transform: translate(0,0);
-      filter:blur(0);
-  }
-}
+
 .buttons{
   position: absolute;
   bottom:30px;
@@ -142,8 +56,46 @@
 
 
 
+/* CSS */
+.button-89 {
+  --b: 3px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: #373B44;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-89:hover,
+.button-89:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.button-89:active {
+  background: var(--color);
+  color: #fff;
+}
+
+
 
 /* CSS */
+
 .button-86 {
   all: unset;
   max-width: 130px;
@@ -165,12 +117,10 @@
   -webkit-user-select: none;
   touch-action: manipulation;
 
-
   display: inline-block;
 
-
-
 }
+
 
 .button-86::after,
 .button-86::before {
@@ -220,7 +170,15 @@
 
 
 
-
+.button_des1 {
+  display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8.5rem;
+}
 
 
 
@@ -444,6 +402,7 @@ display: flex;
   color: hsl(0, 2%, 59%);
   font-weight: bold;
   font-size: 1.2rem;
+  text-wrap: balance;
 }
 
 .card2 h2 {
@@ -652,17 +611,90 @@ color: #222324;}
     padding:20px;
 }
 
+.csslider > ul {
+  width: 650px !important;
+}
 
 .about__img1,
-.about__img2,
-.about__img3,
-.about__img4,
-.about__img5,
-.about__img6,
-.about__img7 {
+.about__img2, 
+.about__VM_img1 {
   width:300px !important;
   height:400px;
 }
+
+
+
+.about__VM_img2,
+.about__VM_img3 {
+  width: 338px !important;
+  height: 322px;
+}
+.about__VM_img4 {
+  margin-right: 1rem;
+  width: 327px !important;
+  height: 265px;
+}
+
+.about__VM_img5 {
+  width: 479px !important;
+  height: 378px;
+}
+.about__XP_img3 {
+  width: 558px;
+  height: 410px;
+}
+
+.about__IL_img1 {
+  width: 418px;
+  height: 419px;
+}
+
+.about__IL_img2, .about__IL_img3, .about__IL_img4 {
+  width: 498px;
+  height: 419px;
+}
+
+.about__BR_img1, .about__BR_img2 {
+  width: 666px;
+  height: 396px;
+}
+
+.about__BR_img3 {
+  width: 740px;
+  height: 298px;
+}
+
+.about__BR_img4 {
+width: 714px;
+height: 396px;
+}
+
+.about__img3{
+  width: 417px !important;
+  height: 399px;
+  }
+
+
+.about__img4, .about__img5, .about__img7 {
+    width: 378px !important;
+    height: 308px;
+}
+.about__img7 {
+    width: 355px !important;
+    height: 327px;
+}
+
+
+/*Big DES pictures */
+.about__img6 {
+width: 690px !important;
+height: 270px;
+}
+
+
+
+
+
 
 .item{
   width: 150px;
@@ -689,7 +721,54 @@ font-size: 2rem;
 
 }
 
+@media screen and (max-width: 768px) {
+  .csslider > ul {
+    width: 450px !important;
+  }
 
+
+  /* BIG sub pictures */
+  .about__img6 {
+    width: 690px !important;
+    height: 270px;
+    }
+    .about__VM_img4 {
+      margin-right: 0rem;
+    }
+    .about__VM_img5 {
+    width: 431px !important;
+    height: 359px;
+  }
+
+  .about__XP_img1 {
+    width: 456px !important;
+    height: 381px;
+  }
+
+  .about__XP_img2 {
+    width: 530px !important;
+    height: 333px;
+  }
+
+  .about__IL_img1 {
+    width: 318px;
+    height: 318px;
+}
+.about__IL_img2, .about__IL_img3, .about__IL_img4  {
+    width: 331px;
+    height: 266px;
+}
+
+.about__BR_img1, .about__BR_img2, .about__BR_img4  {
+  width: 324px;
+  height: 187px;
+}
+.about__BR_img3 {
+    width: 334px;
+    height: 163px;
+}
+
+}
 
 @media screen and (max-width: 600px) {
   .table_container {
@@ -700,7 +779,22 @@ font-size: 2rem;
   
     border-collapse: collapse; 
   }
+/* SMALL sub pictures */
+  .about__img3 {
+    width: 341px !important;
+    height: 329px;
+  }
 
+ /* BIG sub pictures */
+ .about__img6 {
+    width: 445px !important;
+    height: 173px;
+  }
+
+  .about__XP_img3 {
+    width: 324px;
+    height: 232px;
+}
 
   .card2 {
     margin: 5px;
@@ -772,9 +866,6 @@ font-size: 2rem;
     padding: 6px;
   }
 
-
-
-  
   
   table td::before {
     /*
@@ -787,6 +878,39 @@ font-size: 2rem;
     text-transform: uppercase;
   }
 }
+
+
+@media screen and (max-width: 550px) {
+  .csslider > ul {
+    width: 250px !important;
+  }
+
+  .about__VM_img5 {
+    width: 295px !important;
+    height: 244px;
+  }
+
+
+  .about__XP_img1 {
+    width: 321px !important;
+    height: 270px;
+  }
+
+
+
+  .about__XP_img2 {
+    width: 322px !important;
+    height: 217px;
+  }
+
+
+
+
+
+
+}
+
+
 
 /*TABLE CONTAINER END*/
 

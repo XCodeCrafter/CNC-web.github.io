@@ -113,8 +113,14 @@ const sr = ScrollReveal({
 sr.reveal(`.home__data, .explore__data, .explore__user, .footer__container`)
 sr.reveal(`.home__card`, {delay: 600, distance: '100px', interval: 100})
 sr.reveal(`.about__data, .join__image`, {origin: 'right'})
+sr.reveal(`.about__data2, .join__image`, {origin: 'right'})
 sr.reveal(`.about__image, .join__data`, {origin: 'left'})
 sr.reveal(`.about__image1, .join__data`, {origin: 'left'})
+sr.reveal(`.about__img1, .about__img2, .about__img3, .about__img4, .about__img5, .about__img6, .about__img7`, {origin: 'left'})
+sr.reveal(`.about__VM_img1, .about__VM_img2, .about__VM_img3, .about__VM_img4, .about__VM_img5`, {origin: 'left'})
+sr.reveal(`.about__XP_img1, .about__XP_img2, .about__XP_img3`, {origin: 'left'})
+sr.reveal(`.about__IL_img1, .about__IL_img2, .about__IL_img3, .about__IL_img4`, {origin: 'left'})
+sr.reveal(`.about__BR_img1, .about__BR_img2, .about__BR_img3, .about__BR_img4`, {origin: 'left'})
 sr.reveal(`.popular__card`, {interval: 200})
 
 
