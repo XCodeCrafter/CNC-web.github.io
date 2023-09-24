@@ -119,7 +119,7 @@
 
 
 
-         <section class="heading2">
+         <section class="heading2 green_h1">
 
             <h1 class="heading-title"> VK4II </h1>
 
@@ -144,9 +144,20 @@
                      knee and 5.83″ quill travel, the VK4II can be run as manual, teach or full CNC.
                   </p>
 
-                  <a href="#" class="button">
-                     Explore <i class="ri-arrow-right-line"></i>
-                  </a>
+                  
+                     <!-- HTML !-->
+                  <div class="button_des">
+                     <a class="button-86" href="assets/ducuments/Milltronics_Tool-Room_Mills.pdf"
+                     onclick="openPdf(event, 'assets/ducuments/Milltronics_Tool-Room_Mills.pdf', 'newpage.html');"> Data Sheet</a>
+
+
+
+                     
+                     <a class="button-86" href="assets/ducuments/Milltronics_Overview-Brochure.pdf"
+                     onclick="openPdf(event, 'assets/ducuments/Milltronics_Overview-Brochure.pdf', 'newpage.html');"> Product Catalog</a>
+                  </div>
+
+
                </div>
             </div>
          </section>
@@ -430,5 +441,29 @@
 
       <!--=============== MAIN JS ===============-->
       <script src="assets/js/sub-main.js"></script>
+
+      <!--=============== PDF OPENER ===============-->
+
+      <script type="text/javascript">
+
+         function openPdf(e, path, redirect) {
+             // stop the browser from going to the href
+             e = e || window.event; // for IE
+             e.preventDefault(); 
+     
+             // launch a new window with your PDF
+             window.open(path, 'somename',);
+     
+             // redirect current page to new location
+             window.location = redirect;
+         }
+     
+     </script>
+
+
+
+
+
+
    </body>
 </html>
