@@ -1,4 +1,30 @@
 
+
+// Function to show the message box
+function showMessageBox() {
+  document.getElementById('messageBox').style.display = 'block';
+}
+
+// Function to handle "Yes" button click
+function handleYes() {
+  document.getElementById('messageBox').style.display = 'none'; // Hide the message box
+  document.getElementById('content').style.display = 'block'; // Show the page content
+}
+
+// Function to handle "No" button click
+function handleNo() {
+  window.location.href = 'https://www.google.com'; // Redirect to Google
+}
+
+// Show the message box after page loads
+window.onload = showMessageBox;
+
+
+
+
+
+
+
 /*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById('nav-menu'),
       dropdownMenu = document.getElementById('dropdown-menu'),
@@ -168,4 +194,11 @@ document.getElementById('prev').onclick = function(){
   let lists = document.querySelectorAll('.item');
   document.getElementById('slide').prepend(lists[lists.length - 1]);
 }
+
+
+
+
+
+
+
 
