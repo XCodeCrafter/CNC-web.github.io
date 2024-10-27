@@ -809,6 +809,18 @@ font-size: 2rem;
 
 }
 
+@media screen and (max-width: 800px) {
+.contact_form a {
+    font-size: 14px;
+    max-width: 450px;
+}
+
+}
+
+
+
+
+
 @media screen and (max-width: 768px) {
   .csslider > ul {
     width: 450px !important;
