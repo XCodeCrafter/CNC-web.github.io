@@ -2381,10 +2381,6 @@ margin: 3px;
     display: none;
   }
 
-  
-  
-  
-
   .nav__menu ul li:hover .dropdown__menu ul {
     display: block;
     margin: 10px;

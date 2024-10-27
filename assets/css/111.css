@@ -1067,3 +1067,59 @@ font-size: 2rem;
     align-content: center;
     flex-direction: column-reverse;
     */
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Basic styling for message box */
+.message-box {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border: 2px solid #333;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+/* Text inside the message box */
+.message-box p {
+  margin: 0 0 20px;
+  font-size: 16px;
+}
+
+/* Buttons styling */
+.message-box button {
+  margin: 0 10px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+/* Yes button style */
+.yes-button {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+/* No button style */
+.no-button {
+  background-color: #f44336;
+  color: #fff;
+}
